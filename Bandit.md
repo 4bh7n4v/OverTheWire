@@ -24,12 +24,72 @@ Spaces in the file name seems to be work as different Directories to make it as 
 password:"aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG"
 
 ## Level-4
-The Content in the Present Working Directory is know by listings Command but few file are hidden as per there properties 
+The Content in the Present Working Directory is known by listings Command but few file are hidden as per there properties 
 
 To find all files in an Directory is to Move to the Directory and add  to the Main command listings
 
-To Find Special properties of the main Command we find them Using man <Command> which stands for manual
+To Find Special properties of the main Command we find them Using "man <Command>" which stands for manual
 
-to Find hidden File in present Working Directory 
+to Find hidden File in present Working Directory use "ls -a" find password inside the file
+
+password:"2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe"
+
+## Level-5
+As per The Question we have to find human readable file inthe following Directory 
+
+To Find human Readable file i.e ASCII file we have to check the file format Generally we use FILE command to get format of a file as "file <filename>"
+
+as there were to many file we recursively use "file /path/*" to get all file format of the file present in the directory
+we get a file format "/home/bandit4/inhere/-file07: ASCII text" and thats the human readable file
+
+password: "lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR"
+
+## Level-6
+As per the question we have to find a human readable file with size 1033 and not excutable
+
+To find a file of required Size we can use the "Find command" with feauture -size 1033c here 1033 is Size and c determine the bytes 
+the only file wuth Size 1033 bytes is "./maybehere07/.file2"
+
+password:"P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU"
+
+## Level-7
+This is just the extension level of the previous one 
+
+Here we have to find the Defined user Defined group Defined Size
+we can Find how to find user,group from manual that is using man command of file
+
+password:"z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S"
+## Level-8
+The flag stored in the file data.txt next to the word millionth
+
+we have to Find the word from the list of data Generally Find caonnd is use to find files based on size and it features whereas it cant file words
+to find words we can use "grep" Command to Search word
+
+password:"TESKZC0XvTetK0S9xNwm25STk5iWrBvP"
+## Level-9
+The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+Tha data consist of unknown number of word which may or may not be repeated to gather up all the similar file we can use "Sort" and "Uniq -c" 
+Sort will sort the words as per alphabetical order and uniq -c determinatine the count of each each word repeated
+
+the password which repated once is
+password: "EN632PlfYiZbn3PhVK3XOGSlNInNE00t"
+ ## Level-10
+ The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters
+ Since the file type is data it contains machine langauges to find strings in the file we can use "string command" to find strings present in the data
+and we have to search for == near flag
+
+password:"G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s"
+
+## Level-11
+The password for the next level is stored in the file data.txt, which contains base64 encoded data
+
+To decode the encrypted base64 data we need to use echo i.e printing text of echo to decrypt encrypted data we need to use base64 command
+i.e 'echo "encrypted.data" | base64 -d'
+
+password:"6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM"
+
+## Level-12
+
+
 
 
