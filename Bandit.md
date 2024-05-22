@@ -144,10 +144,17 @@ password "wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw"
 The password of the current level is stored in the next level and they have provided and ssh private key to login through ssh with host as local host
 
 Using Command `ssh bandit14@localhost -i sshkey.private -p 2220`
+
 password : "fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq"
 
 ## Level-15
+The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost
 
+To have a networt connection between clinet and the server we can use netcat
+
+Using Command ` echo "fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq" | nc localhost 30000`
+
+password : "jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt"
 
 
 
