@@ -141,6 +141,12 @@ Repeat the process until the file type `ASCII` is shown
 password "wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw"
 
 ## Level-14
+The password of the current level is stored in the next level and they have provided and ssh private key to login through ssh with host as local host
+
+Using Command `ssh bandit14@localhost -i sshkey.private -p 2220`
+password : "fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq"
+
+## Level-15
 
 
 
