@@ -102,6 +102,29 @@ Using The Command `tr 'A-Za-z' 'N-ZA-Mn-za-m' <<< "Gur cnffjbeq vf WIAOOSFzMjXXB
 password : "JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv"
 
 ## Level-13
+The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed
+
+For this level we have to create directory in tmp directory Using command `mkdir /tmp/Security`
+Copy the file from /home/bandit12 to the present working directory Using `cp /home/bandit12/data.txt cypher`
+This file hexdump is repeatedly compressed to get hexdump of file Use `xxd -r cypher > Encrypted`
+Search the file type of the Encrypted file Using `file Encrypted`
+Change the filename using mv command for leaving extension .gz
+TO Extract the gzip file Use the Command `gzip -d Encrypted.gz`
+Check the file type of the Extracted File and Change the file extension into bz2
+To Extract the bzip2 file Use the Command `bzip -d Encrypted.bz2`
+Check the FIle type and Change the filename using mv command for leaving extension .gz
+To Extract the gzip file Use the Command `gzip -d Encrypted.gz`
+Check the FIle type and Change the filename using mv command for leaving extension .tar
+To Extract the tar file Use command `tar --extract -f Encrypted.tar`
+Check the FIle type and Change the filename using mv command for leaving extension .tar
+To Extract the tar file Use command `tar --extract -f data5.tar`
+Check the FIle type and Change the filename using mv command for leaving extension .bz2
+To Extract the tar file Use command `bzip2 -d data6.bz2`
+
+Repeat the process until the file type `ASCII` is shown 
+password "wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw"
+
+## Level-14
 
 
 
