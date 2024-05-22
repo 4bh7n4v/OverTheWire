@@ -58,12 +58,15 @@ This is just the extension level of the previous one
 Here we have to find the Defined user Defined group Defined Size
 we can Find how to find user,group from manual that is using man command of file
 
+Using Command `find -user bandit7 -group bandit6 -size 33c`
+
 password:"z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S"
 ## Level-8
 The flag stored in the file data.txt next to the word millionth
 
 we have to Find the word from the list of data Generally Find caonnd is use to find files based on size and it features whereas it cant file words
-to find words we can use "grep" Command to Search word
+to find words we can use "grep" Command to Search word 
+Using command `cat data.txt | grep millionth`
 
 password:"TESKZC0XvTetK0S9xNwm25STk5iWrBvP"
 ## Level-9
@@ -71,11 +74,13 @@ The password for the next level is stored in the file data.txt and is the only l
 Tha data consist of unknown number of word which may or may not be repeated to gather up all the similar file we can use "Sort" and "Uniq -c" 
 Sort will sort the words as per alphabetical order and uniq -c determinatine the count of each each word repeated
 
+Using Command `cat data.txt | sort | Uniq -c`
+
 the password which repated once is
 password: "EN632PlfYiZbn3PhVK3XOGSlNInNE00t"
- ## Level-10
- The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters
- Since the file type is data it contains machine langauges to find strings in the file we can use "string command" to find strings present in the data
+## Level-10
+The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters
+Since the file type is data it contains machine langauges to find strings in the file we can use "string command" to find strings present in the data
 and we have to search for == near flag
 
 password:"G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s"
@@ -84,11 +89,20 @@ password:"G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s"
 The password for the next level is stored in the file data.txt, which contains base64 encoded data
 
 To decode the encrypted base64 data we need to use echo i.e printing text of echo to decrypt encrypted data we need to use base64 command
-i.e 'echo "encrypted.data" | base64 -d'
+Using The comand `echo "encrypted.data" | base64 -d`
 
 password:"6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM"
 
 ## Level-12
+
+The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+Shift cipher with shift space 13 alphabet called ROT13
+
+Using The Command `tr 'A-Za-z' 'N-ZA-Mn-za-m' <<< "Gur cnffjbeq vf WIAOOSFzMjXXBC0KoSKBbJ8puQm5lIEi"` The cipher text is decrypted 
+password : "JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv"
+
+## Level-13
+
 
 
 
