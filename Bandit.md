@@ -106,6 +106,12 @@ Using Command ` echo "fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq" | nc localhost 30000`.
 password : "jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt"  
 
 ## Level-16
+The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL encryption  
+To Connec to the localhost at port 30001 using SSL encryption  
+Use Command `openssl s_client -connect localhost:30001`   
+Enter the previous level password and get current level password  
+password:"JQttfApK4SeyHwDlI9SXGR50qclOAil1"
 
+## Level-17
 
 
