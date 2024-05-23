@@ -127,6 +127,17 @@ Use the Command `diff passwords.new passwords.old`
 if you see bye-bye while login in to next level then thats something related to next level  
 
 ## Level-19
+
+ssh is the command for the Secure Shell protocol, which allows you to securely connect to a remote server.  
+To forces a pseudo-terminal allocation you want to run an interactive command on the remote server, such as a shell.
+to forcely acces apseudo-terminal Use the Command `ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/sh`  
+'/bin/sh' This is the command to execute on the remote server once connected. /bin/sh is a standard Unix shell.  
+When the shecure shell is connected we can read readme file  
+password: "awhqfNnAbc1naukrpqDYcF95h7HoMTrC"
+
+## Level-20
+
+
  
 
 
