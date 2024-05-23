@@ -121,6 +121,12 @@ the sshkey private of level17
 We can find level18 password by following the same as Level14  
 
 ## Level-18
+The password for the next level is in passwords.new and is the only line that has been changed between passwords.old and passwords.new  
+To check two files Line by Line  
+Use the Command `diff passwords.new passwords.old`  
+if you see bye-bye while login in to next level then thats something related to next level  
 
+## Level-19
+ 
 
 
