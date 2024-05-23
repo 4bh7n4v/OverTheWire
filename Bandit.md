@@ -113,5 +113,14 @@ Enter the previous level password and get current level password
 password:"JQttfApK4SeyHwDlI9SXGR50qclOAil1"
 
 ## Level-17
+The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000  
+To Scan the port in the range we Use Command `nmap localhost -p 31000-32000`  
+The list is the following port that listing to the host   
+Use the Command `openssl s_client -connect localhost:port` and trt submiting curent level passowrd when you get the correct ssl speaking port that returns
+the sshkey private of level17   
+We can find level18 password by following the same as Level14  
+
+## Level-18
+
 
 
