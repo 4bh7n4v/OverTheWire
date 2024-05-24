@@ -151,9 +151,7 @@ we use `echo "VxCazJaVykI6W36BkBU0mJTCM8rR95XT" | nc -l -p 5555 & ./suconnect 55
 here we used 5555 port is not reccomeded to use 5555 we can use any tcp port other thwn which are working 
 password:"NvEJF7oVjkddltPSrdKEFOllh9V1IBcq"  
 ## Level-22
-
 We find that a cron job is running. if we check , we find.... `* * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null` this * represent the cron job working every min depening on the user.This states it is running cronjob_bandit.   
-
 ```
 #!/bin/bash
 chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
