@@ -152,7 +152,20 @@ here we used 5555 port is not reccomeded to use 5555 we can use any tcp port oth
 password:"NvEJF7oVjkddltPSrdKEFOllh9V1IBcq"  
 ## Level-22
 
+We find that a cron job is running. if we check , we find.... `* * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null` this * represent the cron job working every min depening on the user.This states it is running cronjob_bandit.   
 
+```
+#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+```  
+This gives us password  
+This shows the following commands have been excuted and possword is been stored in the file mentioned   
+`cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv`
+
+password is `WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff`
+
+## Level-23
  
 
 
