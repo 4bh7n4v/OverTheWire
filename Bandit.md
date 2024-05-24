@@ -136,6 +136,13 @@ When the shecure shell is connected we can read readme file
 password: "awhqfNnAbc1naukrpqDYcF95h7HoMTrC"
 
 ## Level-20
+Here we can use ls -la to list file permisions and who can write/read/excute the file.  
+We see that bandit19 can execute the bandit20-do file.  
+when we Execute bandit20-do it tells us to runs another command as another user.  
+Generally passwords of the level is stored at /etc/bandit_pass/bandit20 if we have a permison to read/write we can check them so i used ./bandit20-do cat /etc/bandit_pass/bandit20 to get the password.  
+Password: VxCazJaVykI6W36BkBU0mJTCM8rR95XT  
+## Level-21
+
 
 
  
