@@ -164,6 +164,22 @@ This shows the following commands have been excuted and possword is been stored 
 password is `WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff`
 
 ## Level-23
- 
+Again we have to chec  the cron job of this level. Which gives us when we excut /usr/passwd/bandit22.sh
+```
+#!/bin/bash
+
+myname=$(whoami)
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+cat /etc/bandit_pass/$myname > /tmp/$mytarget
+```
+here the shell script shown above are the commands usedc to run and find the variables    
+$(whoami) return the user but we nned the passwd of next level so we are working on next user bandit23   
+Now we get the correct file by running the command `echo I am user bandit23 | md5sum | cut -d ' ' -f 1`  
+This gives us `8ca319486bfbbc3663ea0fbe81326349`  
+This is the location of stored flag in temp directory  
+So we `cat /tmp/8ca319486bfbbc3663ea0fbe81326349  
+Password is `QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G`  
+## Level-24
 
 
