@@ -142,7 +142,15 @@ when we Execute bandit20-do it tells us to runs another command as another user.
 Generally passwords of the level is stored at /etc/bandit_pass/bandit20 if we have a permison to read/write we can check them so i used ./bandit20-do cat /etc/bandit_pass/bandit20 to get the password.  
 Password: VxCazJaVykI6W36BkBU0mJTCM8rR95XT  
 ## Level-21
-
+The Currunt Directory contain Suconnect file whicah can be excuted when we try to excut the file by `./suconnect` it shows Usage: ./suconnect <portnumber>
+This program will connect to the given port on localhost using TCP. If it receives the correct password from the other side, the next password is transmitted back.  
+We have to Find the listen port working on the this user using `nmap localhost`.  
+these ports are working listening port numbers which are working and not free
+To connect to the tcp port and send the flag
+we use `echo "VxCazJaVykI6W36BkBU0mJTCM8rR95XT" | nc -l -p 5555 & ./suconnect 5555` netcat is used to have a listing connection between a port and the device  
+here we used 5555 port is not reccomeded to use 5555 we can use any tcp port other thwn which are working 
+password:"NvEJF7oVjkddltPSrdKEFOllh9V1IBcq"  
+## Level-22
 
 
  
