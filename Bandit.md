@@ -181,5 +181,17 @@ This is the location of stored flag in temp directory
 So we `cat /tmp/8ca319486bfbbc3663ea0fbe81326349  
 Password is `QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G`  
 ## Level-24
-
+This level is similar to previous two levels where awe have to involve in task of the cronjob and write a script.
+Here we need to write a script in `/var/spool/bandit24/foo` this script gets executed as bandit 24 .This script execute once and erase it so make sure to copy the intruction  
+since the cronjob is executing as bandit24 the next actuall has already stored password at /etc/bandit_pass/bandit24 so we nned to copy the passowrd and store at a place  
+make sure to give permission to read write and excute to the user of the script  
+The passowrds copying script is  
+```
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/bandit23/password.txt
+```
+Once the script is excuted after a min automatically run  
+`cat /tmp/bandit23/password.txt`  
+Password is `VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar`
+## Level-25
 
